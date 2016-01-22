@@ -1,0 +1,20 @@
+
+1)Generic Description
+Tic -tac toe is a turn based game which is played by two players in a  3x3 square.
+
+
+One of them draws X and other draws O and if one of them can make 3  of the same figure vertically horizontally or diagonally that player wins.
+
+if every place in the square is filled and no one achieved o have 3 same figure. İt is  a draw.
+
+
+2)Display the initial 3 x 3 game board.
+3)One of the players start the game by placing his figure.
+4)Show the placed  figure
+5)İf a winner display winner
+6)if board is full display tie
+7)if neither the case return 3
+8)else ask "wanna play again?"
+9)if "yes" go to 2
+
+

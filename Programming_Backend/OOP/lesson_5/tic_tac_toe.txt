@@ -1,0 +1,17 @@
+Tic tac toe is a  2 player game played on a 3x3 grid. Players take turns marking square. First player who marks 3 squares wins.
+
+nouns: player,board ,square,grid
+
+verbs: mark,play
+
+Board
+Square
+
+Player
+ -play
+ -mark
+
+ 3 + 6
+
+ 2<3
+

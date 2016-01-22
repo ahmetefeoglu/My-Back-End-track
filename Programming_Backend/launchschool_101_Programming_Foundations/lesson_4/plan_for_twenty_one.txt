@@ -1,0 +1,10 @@
+ 1)İnitialize deck
+ 2)Distribute cards to player and dealer
+ 3) player turn: hit or stay continue until "bust" or "stay"
+ 4)dealer turn: hit till the value is 17 stop if it is bigger than "17" or busted
+ 5)if dealer bust player wins
+ 6)if player busts dealer wins
+ 7)Compare the two plaeyr and declare the winner
+
+
+ hearts, diamonds, clubs, and spades

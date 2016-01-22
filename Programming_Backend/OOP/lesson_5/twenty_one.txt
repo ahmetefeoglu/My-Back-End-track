@@ -1,0 +1,58 @@
+ * twenty-one is  a 2 player game 'dealer' and 'player'. Each player is dealt 2 cards from a deck and try to get as close to 21 as possible.Later their cards are compared:
+ 
+ if neither went over 21 
+ their cards values are compared and closest to 21 wins.
+
+ if one of them goes bust
+ other person wins
+
+
+overview of the game
+1)Both players are dealt 2 cards from a deck which has 52 cards
+2)The player goes first and choses to either 'stay' or 'hit'. The turn is over when the player chooses to stay or goes bust.if he goes bust 'dealer' wins. if he stays it's dealers turn.
+3) The dealer has to 'hit' till he has  at least 17 if he reaches that number he stays and if he busts 'player ' wins.
+4)if neither player goes bust ıt's time to compare cards. The one who has the closest total to 21 wins!!
+5)
+
+Nouns
+*player
+*dealer
+*deck
+*game
+*card
+*participant
+*total
+
+Verbs
+*deal
+*hit
+*stay
+*busted?
+*compare
+*play
+
+
+Player
+ *hit
+ *stay
+ *busted?
+ *total
+
+Dealer
+ *hit
+ *stay
+ *busted?
+ *total
+W
+ participant (probably a superclass)
+
+Deck
+ *deal
+ 
+ Card
+
+
+Game
+ *start
+
+
