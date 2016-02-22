@@ -63,3 +63,4 @@ ex = Triplet.new(1,2,3)
 Triplet.where(sum: 12, max_factor: 10)
 
 
+

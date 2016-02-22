@@ -125,6 +125,7 @@ end
 
 class RobotSimulatorTest < MiniTest::Unit::TestCase
   def simulator
+    
     @simulator ||= Simulator.new
   end
 
@@ -159,7 +160,7 @@ class RobotSimulatorTest < MiniTest::Unit::TestCase
   end
 
   def test_instruct_many_robots
-    skip
+    
     robot1 = Robot.new
     robot2 = Robot.new
     robot3 = Robot.new

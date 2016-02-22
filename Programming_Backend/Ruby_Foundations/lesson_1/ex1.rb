@@ -1,10 +1,12 @@
 
 
 def compare(str)
-  puts "Before #{str}"
-  after = yield(str)
-  puts "After #{after}"
+  if block_given?
+   after =  yield(str)
+  end
+  puts after
+
+  str
 end
 
-compare("hello") { |word| word.upcase}
-
+compare("hi") { |word| word.upcase}
