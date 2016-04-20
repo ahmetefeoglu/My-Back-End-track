@@ -1,0 +1,57 @@
+body {
+  background: url(images/bg_body.gif) 50% 0 repeat;
+  text-align: center;
+  font:;
+  padding-top: 135px
+}
+
+header h1 {
+  padding-bottom: 115px;
+}
+
+nav {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+nav li {
+  display: inline;
+  padding: 0 42px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #cacaca;
+}
+
+nav a.active {
+  font-weight: bold;
+  color: #6db9ff;
+}
+
+
+/* main part of  web page */
+
+
+main {
+  background-color: #FFFFFF;
+  padding-top: 125px;
+
+}
+
+
+h2 {
+  padding: 0 0 10px 0 ;
+  font-size: 36px;
+  font-weight: bold;
+  color: #6db9ff;
+}
+
+
+h2:before, h2:after {
+  display: inline-block;
+  padding: 0 24px;
+  font-size: 24px;
+  content:  "\2022";
+}
+

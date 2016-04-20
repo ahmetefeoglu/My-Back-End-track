@@ -1,0 +1,318 @@
+@import url("white-space.css");
+
+body {
+  width: 1280px;
+  background: red;
+  font: 16px normal Helvetica, Arial, sans-serif;
+}
+
+/* HEADER NAV AREA */
+header {
+  background:#e8e8e8;
+}
+
+header nav {
+  position: absolute;
+  top: 37px;
+  right: 50px;
+  
+}
+
+header nav ul {
+  background: #f4f4f4;
+  
+  border-radius: 25px;
+}
+header nav li {
+  display: inline-block;
+  padding-top: 21px;
+  padding-bottom: 14px;
+  padding-right: 22.5px;
+  padding-left: 22.5px;
+  border-left: 1px solid #a2a1a1 ;
+
+}
+
+header nav  li a {
+  color: #a2a1a1;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/*  To make  the left  anchor text disappear */
+
+header nav li.special {
+  visibility: hidden;
+
+}
+
+
+
+/* HEADER  TITLE AREA */
+
+
+header  img.logo {
+  position: absolute;
+  top: 38px;
+  left: 106px;
+}
+
+
+
+
+/*  Articles and beanss */
+
+ header img.left {
+  display: inline-block;
+  position: absolute;
+  top: 210px;
+  left: 109px;
+ }
+
+ header img.right {
+  display: inline-block;
+  position: absolute;
+  top:210px;
+  right:50px;
+
+
+ }
+ header article {
+  margin-top: 175px;
+  padding-left: 195px;
+  box-sizing: border-box;
+  
+  vertical-align: top;
+  display: inline-block;
+ 
+
+}
+
+
+header article  h3 {
+  color: #9d9c9d;
+  text-transform: uppercase;
+
+  
+}
+header article p {
+  box-sizing: border-box;
+  line-height: 150%;
+  width: 435px;
+  color: #9d9c9d;
+
+}
+
+
+header article + img {
+  display: inline-block;
+  padding-left: 100px;
+  margin-top: 170px;
+  padding-bottom: 77px;
+  
+}
+
+
+
+header article a {
+  text-decoration: none;
+  color: #767474
+}
+
+
+header article a:after {
+  content : "";
+  width: 6px;
+  height: 13px;
+  padding-left: 10px;
+  margin-left: 10px;
+  
+  background: transparent url("after.png") 0 5px no-repeat;
+  display: inline-block;
+
+}
+
+
+
+
+
+/* MAIN / SERVICE PART */
+
+main {
+  background: white;
+
+}
+
+
+main .service div h3 {
+  text-transform: uppercase;
+
+}
+main  .service div {
+  
+
+  width: 290px;
+  display: inline-block;
+  padding-left: 105px;
+  padding-top: 105px;
+  padding-bottom: 137px;
+  text-align: center;
+
+}
+
+
+/* Making the images in center */
+
+main .service  div img {
+    
+  padding-bottom: 10px;
+}
+
+main .service div h3 {
+  
+  padding-bottom: 10px;
+}
+
+
+main .service .second-service h3 {
+  
+}
+
+main .service p {
+  padding-bottom: 8px;
+}
+
+main .service div p a  {
+
+  color: #7a5c4c;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+
+
+
+/* GALLERY PART */
+
+main  .photo {
+  float: left;
+  width: 645px;
+  background: #846051;
+  height: 410px;
+  margin-bottom: 142px;
+
+}
+
+main .photo h3 {
+  visibility: hidden;
+}
+
+main  .comment {
+  width: 630px;
+  background: #664735;
+  float: left;
+  vertical-align: top;
+  height: 410px;
+  box-sizing: border-box;
+  padding-top: 54px;
+  padding-left: 44px;
+  margin-bottom: 142px;
+}
+
+
+main  .comment h3 {
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-bottom: 24px;
+  
+}
+
+main .comment p {
+  width: 495px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 200%;
+}
+
+main  .comment p.second-par {
+  padding-top: 21px;
+  padding-bottom: 22px;
+}
+
+
+
+
+
+main  .comment input[type = "submit"] {
+  padding: 11px 19px;
+  border-radius: 6px;
+  color: #775b4b;
+  font-style: italic;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+/* PHOTOS PART */
+
+
+main article {
+  text-align: center;
+  padding-left: 205px;
+  width: 885px;
+  padding-bottom: 36px;
+}
+main article h3 {
+  padding-bottom: 17px;
+}
+
+main article img {
+  padding-bottom: 17px;
+}
+
+
+
+main .photo-img {
+  padding-left: 110px;
+}
+
+
+
+
+/* Footer */
+
+footer {
+  background: #ffffff;
+  height: 465px;
+  position: relative;
+}
+
+footer ul {
+  position: absolute;
+  top: 206px;
+  right:50px;
+}
+
+footer li {
+  display: inline-block;
+}
+
+
+footer p {
+  font-size: 10px;
+  color: #ababab;
+  font-style: italic;
+  position: absolute;
+  left: 122px;
+  bottom: 55px;
+}

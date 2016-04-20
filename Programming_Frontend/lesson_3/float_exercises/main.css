@@ -1,0 +1,23 @@
+
+
+.box-set {
+  background: red;
+  overflow: auto;
+  position: relative;
+}
+
+.box {
+  background: #2db34a;
+  position: absolute;
+  height: 50px;
+  width: 29.615861214%;
+
+}
+
+.box-1 {
+  top:20px;
+}
+.box-2 {
+  left: 40px;
+
+}

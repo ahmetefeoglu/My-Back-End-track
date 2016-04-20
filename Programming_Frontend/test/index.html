@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang = "en-US">
+  <head>
+    <title>Contact Form</title>
+    <meta charset = "UTF-8" />
+    <link rel = "stylesheet" href = "main.css" />
+  </head>
+
+  <body>
+    <div class = "sidebar">
+      <h2 class = "head1">All Todos</h2>
+      <nav class = "first">
+        <ul>
+          <li class = "list1">02/16</li>
+          <li class ="list2">03/16</li>
+          <li class = "list3">04/16</li>
+          <li class ="list4">05/16</li>
+          <li class ="list5">06/16</li>
+        </ul>
+      </nav>
+
+      <h2 class = "head2">Completed</h2>
+      <nav class = "second">
+        <ul>
+          <li>02/16</li>
+          <li>03/16</li>
+          <li>04/16</li>
+          <li>05/16</li>
+          <li>06/16</li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class = "content">
+      
+      <h2>02/16</h2>
+
+      <nav>
+        <a class ="new" href = "">+ Add new to do</a>
+        <ul>
+          <li><a class ="active" href = "">Item 1</a></li>
+          <li><a class ="active" href ="">Item 2</a></li>
+          <li><a class ="deactive"href ="">Item 3</a></li>
+          <li><a class ="deactive" href ="">Item 4</a></li>
+          <li><a class ="deactive" href ="">Item 5</a></li>
+          <li><a class ="active" href ="">Item 6</a></li>
+          <li><a class ="active" href ="">Item 7</a></li>
+          <li><a class ="active" href ="">Item 8</a></li>
+          <li><a class ="active" href ="">Item 9</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class ="invisible">
+      <form action = "" method ="post">
+        <fieldset>
+          <dl>
+            <dt><label for ="title">Title</label></dt>
+            <dd class = "title">
+              <input type ="text" id = "title" name = "title" />
+            </dd>
+
+            <dt><label for ="Due Date">Due Date</label></dt>
+            <dd>
+              <select name ="Due Date">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+              </select>
+            </dd>
+
+            <dt><label for ="Months">/</label></dt>
+            <dd>
+              <select name ="Months">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+              </select>
+            </dd>
+
+            <dt><label for ="Years">/</label></dt>
+            <dd>
+              <select name ="Years">
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+              </select>
+            </dd>
+
+            <dt><label for = "Comments">Description</label</dt>
+            <dd>
+              <textarea cols = "40" rows = "10" placeholder = "Description"></textarea>
+            <dd>  
+          </dl>
+          <input type = "submit" value = "Save" />
+          <input type = "reset" value = "Mark As Complete" />
+
+        </fieldset>
+      </form>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,41 @@
+
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+li {
+  font-size: 18px;
+}
+
+h3 {
+  color: #24D2B5;
+}
+
+body {
+  background-image: url("bg_body.gif"); 
+}
+
+.lists {
+  background-color: #FFFFFF;
+  width: 600px;
+  margin-left: 290px;
+  position: relative;
+  text-align: center;
+  vertical-align: center;
+}
+
+.lists p {
+  padding: 30px;
+}
+
+.lists div img{
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.space {
+  margin-left: 400px;
+}
+
+

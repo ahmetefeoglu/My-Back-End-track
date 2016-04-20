@@ -1,0 +1,34 @@
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+fieldset {
+  width: 600px;
+  padding: 0;
+  margin: 0 auto;
+  border: none;
+  background: #cccccc;
+}
+
+dt {
+  margin-bottom: 5px;
+}
+
+dd {
+  margin-left: 0;
+  margin-bottom: 25px;
+}
+
+input[type = "text"], input[type = "email"], input[type = "number"] {
+  width: 100%;
+  height: 30px;
+  font:normal 14px Helvetica, Arial, sans-serif;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+ul {
+  padding-left: 0px;
+  list-style: none;
+  font-size: 14px;
+}

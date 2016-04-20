@@ -1,0 +1,29 @@
+
+
+
+
+#content, #sidebar {
+  float: left;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+main #content {
+  background: green;
+  
+  width: 50%;
+  
+}
+
+#sidebar {
+   background: red;
+  
+  overflow: hidden;
+}
+
+main {
+  min-width: 600px;
+  max-width: 1400px;
+}
+
+
+

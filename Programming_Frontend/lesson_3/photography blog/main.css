@@ -1,0 +1,88 @@
+@import url("white-space.css");
+
+
+body {
+  font:normal 18px "Roboto-Condensed", sans-serif;
+  display:block;
+  background-image: linear-gradient(to bottom,#d2dbbd, #fcfff5);
+  background-repeat: no-repeat;
+}
+
+header {
+  width: 920px;
+  margin: 0 auto;
+  padding: 20px 0 20px 20px;
+  
+  
+}
+
+h1 {
+  float: left;
+  font-size: 36px;
+  padding: 45px 0 15px 115px;
+  background: transparent url("camera.png") 0 0 no-repeat;
+}
+
+nav {
+
+  padding-top: 75px;
+  float:right;
+}
+
+
+nav li {
+  display: inline-block;
+  
+
+  background: #ffffff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+nav li:hover {
+  background:#91aa9d;
+}
+
+
+a {
+  display:block;
+  padding: 10px 40px 14px 40px;
+  color:#9bb2ac;
+  text-decoration: none;
+}
+
+
+
+/* MAIN PART */
+
+main {
+  clear: both;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 30px;
+  
+  width: 960px;
+  background: white;
+  
+}
+
+main h2 {
+  color: #3e606f;
+  padding:45px 0;
+  font-size:36px;
+}
+
+main p {
+  color:#3e606f;
+}
+
+
+main p.middle {
+  padding: 30px 0;
+}
+
+main img {
+  float: right;
+  padding-bottom: 50px;
+}
+

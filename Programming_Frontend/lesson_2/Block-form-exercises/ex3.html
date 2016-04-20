@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <form action = "" method = "post">
+      <fieldset>
+        <dl>
+          <dt><label for = "Movie">Movies</label></dt>
+          <dd>
+            <select name="title" id="title">
+          <option value="Looper">Looper</option>
+          <option value="Frozen">Frozen</option>
+          <option value="Tommy Boy">Tommy Boy</option>
+            </select>
+          </dd>
+          <dt><label for = "Rating">Rating</label></dt>
+          <dd><input type = "range" name = "points" id = "Rating" min="1" max="5"/></dd>
+        </dl>
+        <input type = "checkbox"> Add to my favourites<br>
+        <input type = "submit" value = "Rate movie" /> 
+      </fieldset>
+    </form>

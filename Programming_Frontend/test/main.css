@@ -1,0 +1,281 @@
+@import url("white-space.css");
+
+
+body {
+  width: 1200px;
+  font: normal 14px Helvetica, Arial, sans-serif;
+  
+}
+
+
+.sidebar {
+  width: 335px;
+  background: #464f77;
+  
+  display: inline-block;
+
+  box-sizing: border-box;
+  
+}
+
+.sidebar ul li {
+  color: #9ca1b6;
+  padding: 25px 0 0 0;
+
+  text-decoration: none;
+
+}
+
+
+
+.sidebar nav {
+  padding-left: 134px;
+}
+
+.sidebar ul {
+  width: 100%;
+}
+
+.sidebar nav.first ul li:hover {
+  background: #383f5f;
+}
+
+
+.sidebar nav.first ul li:after {
+  display: inline-block;
+  content: "";
+  border-radius: 100%;
+  background: #6b7292;
+  margin-left: 97px;
+
+}
+
+.sidebar nav.first .list1:after {
+  content: "8";
+  background: #148fd5;
+  padding: 1px 5px;
+}
+
+.sidebar nav.first .list2:after {
+  content: "2";
+  padding: 1px 5px;
+}
+
+.sidebar nav.first .list3:after {
+  content: "1";
+  padding: 1px 5px;
+}
+
+.sidebar nav.first .list4:after {
+  content: "1";
+  padding: 1px 5px;
+}
+
+.sidebar nav.first .list5:after {
+  content: "6";
+  padding: 1px 5px;
+}
+
+
+.sidebar nav.second ul li {
+  text-decoration: line-through;
+}
+
+.sidebar h2 {
+  color: #ffffff;
+  padding-top: 62px;
+  padding-left: 98px;
+}
+
+.sidebar h2.head2:before {
+  content: "";
+  background: transparent url("nike.png") no-repeat;
+  background-position: left center;
+  width: 26px;
+  height: 28px;
+  padding: 15px 38px 15px 0;
+  
+}
+
+
+
+
+.sidebar h2.head1:before {
+  content: "";
+  background: transparent url("list.png") no-repeat;
+  background-position: left center;
+  width: 26px;
+  height: 28px;
+  padding: 15px 38px 15px 0;
+  
+}
+
+.sidebar h2.head1:after {
+  display: inline-block;
+  padding: 1px 5px;
+  content: "18";
+  
+  border-radius: 100%;
+  background: #6b7292;
+  margin-left: 62px;
+}
+
+
+
+.sidebar nav.second {
+  padding-bottom: 230px;
+}
+
+
+
+
+/* MAIN CONTENT */
+
+.content {
+  float: right;
+  background: #ffffff;
+  width: 865px;
+  box-sizing: border-box;
+  padding-right: 105px;
+  
+}
+
+
+.content h2 {
+  padding: 62px 0 40px 31px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.content h2:after {
+  font-size: 14px;
+  color:#ffffff;
+  content: "8";
+  display: inline-block;
+  padding: 1px 5px;
+  vertical-align: top;
+  
+  
+  border-radius: 100%;
+  background: #148fd5;
+  margin-left: 20px;
+
+}
+
+/* LINKS AND HOVERING around */
+.content nav  a {
+  text-decoration: none;
+  color: #2f2f2f;
+}
+
+.content nav a.new {
+  display: block;
+  color:#2396d7;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.content nav a.deactive {
+  color: #bdbdbd;
+  text-decoration: line-through;
+
+}
+
+.content nav a.active:hover {
+  color:#2396d7;
+}
+
+.content nav ul a:after {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background: transparent url("trash.png") no-repeat;
+  background-position: right center;
+  padding: 2px 9px;
+  margin-left: 645px;
+
+
+}
+
+
+.content nav {
+  padding-left: 31px;
+}
+
+
+
+.content nav li {
+  border-top: 1px solid #e5e5e5;
+  padding: 17px 0;
+}
+
+
+
+
+/* FORM */
+
+.invisible {
+  width: 575px;
+  background: #ffffff;
+  box-sizing: border-box;
+  border: none;
+  font-size: 16px;
+  font-weight: 350;
+  position: absolute;
+  top: 105px;
+  right:165px;
+  left:430px;
+  bottom:200px;
+  display: none;
+
+
+}
+
+
+dt {
+  display: inline-block;
+}
+
+dl {
+  padding: 45px 45px 40px 30px;
+}
+
+
+dd {
+  display: inline-block;
+}
+
+dd.title {
+  width: 426px;
+}
+
+
+input[type = "submit"], input[type ="reset"] {
+  background:#148ed4;
+  color: #ffffff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  
+
+}
+
+
+input[type ="submit"] {
+  padding: 10px 70px;
+  margin-left: 140px;
+  margin-right: 16px;
+}
+
+input[type ="reset"] {
+  padding: 10px 22px;
+}
+
+
+@media (max-width: 768px) {
+  
+}
+
+  
+  
+
+

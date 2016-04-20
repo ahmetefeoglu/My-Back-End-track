@@ -1,0 +1,12 @@
+
+#positioned {
+  background-color: gray;
+  padding: 30px 15px;
+  width: 400px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 50%;
+  margin-left: -200px;
+  box-sizing: border-box;
+}

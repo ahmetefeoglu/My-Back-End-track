@@ -1,0 +1,388 @@
+@import url("white-space.css");
+
+
+body {
+  font: 16px normal Helvetica,Arial,sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #0ebfdd;
+}
+
+h2 {
+  font-size: 36px;
+  padding-bottom: 25px;
+
+}
+
+article {
+  padding-bottom: 80px;
+}
+
+/* HEADERRR PAART */
+h1 {
+  font-size: 68px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  background: transparent url("image.png") 50% 100% no-repeat;
+  padding-bottom: 130px;
+  margin-bottom: 125px;
+
+
+}
+
+
+
+
+
+body >header {
+  text-align: center;
+  padding: 130px 0 50px 0;
+  background: #3d3d3d;
+}
+
+
+nav li {
+  display: inline-block;
+  padding: 0 25px;
+}
+
+
+nav li a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+nav li  a:hover {
+  color: #D2CD39;
+
+}
+
+
+
+
+
+/* CONTENT PART */
+
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 0;
+  font-size: 20px;
+  
+}
+
+
+main .content {
+  float: left;
+  width: 65%;
+  padding:  0 11.5% 0  0;
+}
+
+
+header p {
+  padding-bottom: 30px;
+  
+}
+
+
+article header +  p {
+  line-height: 150%;
+}
+
+
+
+/* SUB PART  PAGINATION */
+
+.pagination input[type = "submit"] {
+  padding: 6px 27px;
+  border-radius: 14px;
+  border: none;
+  color: #ffffff;
+  margin-bottom: 90px;
+
+}
+
+
+.pagination .first {
+  background: #d2d5da;
+  margin-right: 25px;
+
+}
+
+
+.pagination .second {
+  background: #50c3af;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SIDEBARRR */
+
+
+main .sidebar {
+  padding: 30px;
+  background:#f6f6f7;
+  overflow: hidden;
+}
+
+
+
+.sidebar h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-bottom: 25px;
+}
+
+.sidebar ul {
+  padding-bottom: 115px;
+}
+
+
+.sidebar ul li a {
+  font-size: 14px;
+  
+  color: #787b80;
+}
+
+
+.sidebar ul li a:before {
+  content: "";
+  background: transparent url("sign.png") 0 0 no-repeat;
+  padding-right: 17px;
+
+
+}
+
+.sidebar ul li  a:hover {
+  color: #50c3af;
+}
+
+
+ .sidebar p {
+  font-size: 14px;
+  line-height: 150%;
+  color: #787b80;
+
+ }
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+  clear: left;
+  border-top: 1px solid #cacdd1;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+footer p {
+  padding: 15px 0 45px 0 ;
+  font-size: 14px;
+  color: #7e8287;
+
+}
+
+
+
+
+/** POST PAGE **/
+
+
+  /** Comments **/
+
+section header time {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+
+section header p a {
+  text-transform: uppercase;
+
+
+}
+
+section header p a:before {
+  content: "";
+  padding: 17px 49px 17px 0;
+  
+  vertical-align: middle;
+  
+
+}
+
+
+section .first-comment  p a:before {
+  background: transparent url("kevin.png") 0 0 no-repeat;
+
+
+}
+
+
+section .second-comment p a:before {
+  background: transparent url("chris.png") 0 0 no-repeat;
+}
+
+
+section article {
+  padding-bottom: 50px;
+}
+
+
+
+  /** FORUM **/
+
+
+
+  form input[type = "submit"] {
+    padding: 6px 27px;
+    border-radius: 14px;
+    border: none;
+    color: #ffffff;
+    margin-bottom: 90px;
+    background: #50c3af;
+    margin-top: 5px;
+  }
+
+
+
+  form dt {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+
+  fieldset input[type = "text"], input[type = "email"],
+  textarea {
+    width: 450px;
+    padding:10px 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border-box: box-sizing;
+
+
+  }
+
+
+
+  textarea {
+    width: 100%;
+    resize: none;
+    height: 135px;
+  }
+
+
+
+  /** MEDIA QUERIES **/
+
+  @media(max-width: 768px) {
+
+    body > header {
+      padding: 40px 0 20px 0;
+    }
+
+    h1 {
+      font-size: 48px;
+    }
+
+
+    h2 {
+      font-size: 24px;
+    }
+
+  }
+
+
+  @media(max-width: 600px) {
+    main .content {
+      float: none;
+      width: 100%;
+      box-sizing: border-box;
+      padding:0 20px 0 20px;
+
+    }
+
+
+
+    main .sidebar {
+      overflow: none;
+    }
+
+    .sidebar .block {
+      display: inline-block;
+      width: 49%;
+      vertical-align: top;
+    }
+
+    main .sidebar ul {
+      padding-bottom: 0;
+    }
+
+    form input[type = "submit"] {
+      margin-bottom: 50px;
+    }
+  }
+
+
+
+  @media (max-width: 480px) {
+
+    h1 {
+      background-size: 90% auto;
+      margin-bottom: 40px;
+      padding-bottom: 90px;
+    }
+
+    nav li {
+      padding:10px  0;
+
+      width: 49%;
+      box-sizing: border-box;
+    }
+
+
+    body > header {
+      padding: 40px 0 0 0;
+    }
+
+
+    main .sidebar {
+      margin: 0 20px;
+      padding: 0;
+      box-sizing: border-box;
+      background: #ffffff
+    }
+
+    main .sidebar .block {
+      background:#f6f6f7; 
+      display: block;
+      width: 100%;
+      padding: 20px;
+      
+      margin-bottom: 20px;
+      background:#f6f6f7;
+    }
+  }

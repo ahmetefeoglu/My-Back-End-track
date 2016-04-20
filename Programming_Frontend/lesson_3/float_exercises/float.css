@@ -1,0 +1,39 @@
+section {
+  background-color: gray;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+
+
+header  {
+  background-color: brown;
+  float: left;
+  width: 15%;
+}
+
+
+.article {
+  background-color: red;
+  float: left;
+  width: 70%;
+  padding-right: 30px;
+  
+  box-sizing: border-box;
+}
+
+.side1 {
+  overflow: hidden;
+  background-color: yellow;
+  float:right;
+  width: 15%;
+}
+
+
+
+footer {
+  margin-top: 400px;
+  background-color: blue;
+  clear: both;
+}

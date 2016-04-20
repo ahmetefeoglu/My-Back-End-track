@@ -1,0 +1,50 @@
+h1 {
+  font-family: Helvetica,Arial, sans-serif;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: Helvetica,Arial, sans-serif;
+  font-size: 24px;
+  color: #BA3925;
+}
+
+body {
+  font-family: Georgia, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+figcaption {
+  font-size: 14px;
+  font-family: italic;
+  line-height: 24px;
+  text-align: center;
+}
+
+header p {
+  font-size: 14px;
+  font-style: italic;
+}
+
+#author {
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+a {
+  text-decoration: none;
+  color: #2455C3;
+}
+
+blockquote {
+  padding-left: 12px;
+  margin-left: 0;
+  font-style: italic;
+  border-left-width: 1px;
+  border-left-style: dotted;
+  border-left-color: #bfbfbf;
+}
