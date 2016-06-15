@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Duncan's Just-In-Time Donuts</title>
+
+    <link rel="stylesheet" type="text/css" href="donuts.css" />
+
+    <script type="text/javascript">
+      function instant_value(value, arr) {
+        var position = -1;
+        for(var i = 0; i < arr.length; i++) {
+          if (value === arr[i]) {
+            position = i;
+            break;
+            
+          }
+        }
+        return position;
+      }
+
+      console.log(instant_value(2, [1,2,3,4,5]));
+
+
+    </script>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang = "en-Us">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" /> 
+    <link rel="stylesheet" type="text/css" href="splash.css">  
+
+    <script type = "text/javascript">
+      var me = {
+        firstName: "Ahmet",
+        lastName: "Efeoglu"
+      };
+
+      var friend = {
+        firstName: "Sami",
+        lastName: "Menteş"
+      };
+
+      var mother = {
+        firstName: "Emel",
+        lastName: "Oguzmert"
+      };
+
+      var father = {
+        firstName: "Ercan",
+        lastName: "Efeoglu"
+      };
+
+
+      var people = {
+        collection: [me,friend,mother,father],
+        fullName: function(person) {
+          console.log(person.firstName + " " + person.lastName);
+
+        },
+
+        rollCall:function() {
+          people.collection.foreach(people.fullName);
+
+        },
+
+        add: function(person) {
+          this.collection.push(person);
+        },
+
+        getIndex: function(person) {
+          return this.collection.indexOf(person);
+
+        },
+
+        remove: function(person) {
+          var index = this.getIndex(person);
+          console.log(index);
+        }
+          // body...
+        
+      };
+
+      
+
+
+      
+      function rollCall(people) {
+        people.foreach(function(item) {
+          fullName(item);
+        });
+      }
+
+      people.remove(me);
+    </script>
+  </head>

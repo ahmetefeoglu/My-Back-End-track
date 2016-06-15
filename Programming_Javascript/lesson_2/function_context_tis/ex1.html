@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang = "en-Us">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" /> 
+    <link rel="stylesheet" type="text/css" href="splash.css">  
+
+    <script type = "text/javascript">
+      var temperatures = [53,86,12,43];
+
+      function average(values) {
+        var total = 0;
+
+        for (var i = 0, length = this.length; i < length; i++) {
+          total += this[i];
+        }
+
+        return total / this.length;
+
+      }
+
+
+      console.log(average(temperatures));
+      console.log(average.call(temperatures));
+
+
+
+    </script>
+  </head>

@@ -1,0 +1,11 @@
+div {
+  padding: 50px;
+  width: 100px;
+  background: brown;
+
+  position: absolute;
+  left: 50%;
+  top:50%;
+  margin-left: -75px;
+  margin-top: -50px;
+}

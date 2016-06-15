@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Utility Library Tests</title>
+    <link rel = "stylesheet" type = "text/css" href = "main.css">
+   
+    
+    <script>
+    function $(element_selector) {
+      return document.getElementById("" + element_selector);
+    }
+
+    window.onload = function() {
+      $("calculator").onsubmit = function(eventObj) {
+        eventObj.preventDefault();
+        var numerator = +$("num1").value;
+        var denominator = +$("num2").value;
+        var operator = $("operator").value;
+        console.log(denominator);
+        console.log(operator);
+
+        var result = 0;
+
+        if (operator === "+") {
+          result = numerator + denominator;
+        }
+
+        if (operator === "-") {
+          result = numerator - denominator;
+        }
+
+        if (operator === "*") {
+          result = numerator * denominator;
+        }
+
+        if (operator === "/") {
+          result = numerator / denominator;
+        }
+        console.log(result);
+
+        
+        $("result").innerHTML = result;
+      };
+
+    };
+      
+
+
+
+
+          
+
+          
+        
+     
+
+
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <h1 id = "result">0</h1>
+      <form action = "" method = "get" id = "calculator">
+        <input type = "text" name = "num1" id = "num1">
+        <select name = "operator" id = "operator">
+          <option >+</option>
+          <option >-</option>
+          <option >*</option>
+          <option >/</option>
+          
+        </select>
+        <input type = "text" name = "num2" id = "num2">
+        <input type = "submit" value = "=">
+      </form>
+    </main>
+  </body>
+</html>

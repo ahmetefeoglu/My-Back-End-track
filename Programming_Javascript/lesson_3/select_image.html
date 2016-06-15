@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Utility Library Tests</title>
+    <link rel = "stylesheet"  type = "text/css" href = "ex_dom.css">
+    <script type = "text/javascript">
+      
+
+      function init() {
+        var images = document.getElementsByTagName("img");
+        console.log(typeof images);
+
+        for (var i = 0; i < images.length; i++) {
+          images[i].onmouseover = showAnswer; 
+
+          images[i].onmouseout = hideAnswer;
+        }
+
+
+        
+
+        function showAnswer(eventObj) {
+          var image = eventObj.target;
+          var name =  image.id + ".jpg";
+          image.src = name;
+
+
+
+
+
+        }
+
+        function hideAnswer(eventObj) {
+          var image = eventObj.target;
+          if (image.id.includes("blur")) { return;}
+
+          else {
+            var name = image.id + "blur" + ".jpg";
+            image.src = name;
+
+          }
+        }
+
+        
+       
+
+
+      }
+
+      window.onload = init;
+
+
+    </script>
+
+    <style>  
+      body { margin: 20px;}
+      img { margin: 20px;}
+    </style>
+  </head>
+
+  <body>
+    <img id = "zero" src = "zeroblur.jpg">
+    <img id = "one" src = "oneblur.jpg">
+    <img id = "two" src = "twoblur.jpg">
+    <img id = "three" src = "threeblur.jpg">
+    <img id = "four" src = "fourblur.jpg">
+    <img id = "five" src = "fiveblur.jpg">
+
+
+
+
+
+
+
+  </body>
+</html>

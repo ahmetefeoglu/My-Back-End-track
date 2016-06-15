@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang = "en-Us">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" /> 
+    <link rel="stylesheet" type="text/css" href="splash.css">  
+
+    <script type = "text/javascript">
+     function Vehicle() {
+      this.doors = 4;
+      this.wheels = 4;
+
+     }
+
+     function Coupe() {
+      
+      this.doors = 2;
+
+     }
+
+     function MotorCycle() {
+      this.wheels = 2;
+      
+
+     }
+
+     Coupe.prototype = new Vehicle();
+     MotorCycle.prototype = new Vehicle();
+     
+     Vehicle.prototype = {
+      doors: 4,
+      wheels: 4
+     };
+     
+
+     var sedan = new Vehicle();
+     var coupe = new Coupe();
+     var motor = new  MotorCycle();
+
+     coupe.wheels = 2;
+     
+     console.log(Vehicle.prototype);
+
+    </script>
+  </head>

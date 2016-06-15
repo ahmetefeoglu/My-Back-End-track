@@ -1,0 +1,30 @@
+@import url("white-space.css");
+
+
+canvas {
+  display: block;
+  border: 1px solid #000000;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+ul {
+  width: 800px;
+  margin: 0 auto;
+}
+li {
+  display: inline;
+  padding-right: 10px;
+}
+li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 12px;
+  background: #e4e4e4;
+  font-size: 16px;
+  color: #000;
+}
+
+li a.active {
+  background: #1494CF;
+  color: #fff;
+}

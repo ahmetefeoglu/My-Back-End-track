@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Utility Library Tests</title>
+    <link rel = "stylesheet" type = "text/css" href = "main.css" media = "all">
+    <link rel = "stylesheet" type = "text/css" href = "print.css" media = "print">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+
+
+    /* 
+     $("ul").append("li").text($quantity + " " + $item_name);
+
+ 
+    the problem is in that line
+    */
+      $(function() {
+        var $form = $("form");
+        
+        $form.on("submit", function(eventObj) {
+          eventObj.preventDefault();
+          
+          var $item_name = "";
+          var $quantity = 1;
+          $item_name = $("#item_name").val();
+          $quantity = $("#quantity").val() || 1;
+
+          list = document.createElement("li");
+
+          
+
+          
+          
+         
+         $("ul").append("<li>" + $quantity + " " + $item_name + "</li>");
+
+
+         $form.get(0).reset();
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <h2>Add an item</h2>
+      <form action = "" method = "get">
+        <fieldset>
+          <dl>
+            <dt><label for = "item_name">Item name</label></dt>
+            <dd>
+              <input type = "text" id = "item_name" name = "item_name">
+            </dd>
+
+            <dt><label for = "quantity">Quantity</label</dt>
+            <dd>
+              <input type = "number" id ="quantity" name = "quantity">
+            </dd>
+          </dl>
+
+          <input type = "submit" value = "Add">
+        </fieldset>
+        <h3>Groceries</h3>
+        <ul></ul>
+      </form>
+    </main>
+  </body>
+</html>
+
+

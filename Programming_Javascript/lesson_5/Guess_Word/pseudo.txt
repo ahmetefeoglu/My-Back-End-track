@@ -1,0 +1,23 @@
+Guess Word is  a game that is played with one player.
+
+For  each game, a  word is  chosen and it's length of characters are shown to the player in the screen.
+
+From there on, the player will type a  letter on keyboard.If it exists in the  word that was chosen, in the page's
+word section, all the letters of that  word  that matches  the  letter that  player  chosen will be  displayed.
+
+
+If the letter that player  types  is not in the word. He will lose  a number  from his  guesses and. In the page, guess section the letter that is not in the word will be displayed.
+
+if  the player cannot   fill all the word's letters, before  his  guess number  reaches  zero  he loses. If he  can fill it  before, he wins.
+
+After he wins  there will be  a  choice to  click play agan and  if the palyer clicks  everything will start from zero.
+
+
+
+Player, Game,
+
+
+Game
+ *guess_number(6)
+ *an array of words
+ *

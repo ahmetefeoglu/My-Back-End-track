@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang = "en-Us">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" /> 
+    <link rel="stylesheet" type="text/css" href="splash.css">  
+
+    <script type = "text/javascript">
+      var my_object = {
+        count: 1,
+        my_child_object: {
+          myMethod: function() {
+            return this.count;
+          }
+        }
+      };
+
+      my_object.my_child_object.myMethod();
+
+      console.log(myMethod.call(my_object));
+
+
+
+    </script>
+
+  </head>
+</html>

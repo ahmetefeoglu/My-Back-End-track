@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang = "en-Us">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" /> 
+    <link rel="stylesheet" type="text/css" href="main.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src = "main.js"></script>
+    
+  </head>
+
+  <body>
+    <main>
+      <form action = "" method = "get">
+        <fieldset>
+          <h1>Inventory Order Form</h1>
+          <dl>
+            <dt>Date Ordered</dt>
+            <dd id = "date_order"></dd>
+            <dt><label for = "requester">Requester Name</label></dt>
+            <dd><input type = "text" name = "requester"></dd>
+          </dl>
+
+          <h2>Shipping Adress</h2>
+
+          <dl>
+             <dt><label for = "adress">Street Address</label></dt>
+             <dd><input type = "text" name = "adress"></dd>
+             <dd><input type = "text" name = "adress"></dd>
+          </dl>
+
+          <dl class = "partial">
+            <dt><label for = "city">City</label></dt>
+            <dd><input type = "text" name = "city"></dd>
+          </dl>
+
+          <dl class = "partial">
+            <dt><label for = "state">State</label></dt>
+            <dd><input type = "text" name = "state"></dd>
+          </dl>
+
+          <dl class = "partial">
+            <dt><label for = "zip">Zip Code</label></dt>
+            <dd><input type = "text" name = "zip"></dd>
+          </dl>
+
+          <h2>Items To Order</h2>
+          <table id = "inventory"></table>
+
+          <script type = "text/template" id = "inventory_item">
+            <tr>
+              <td>
+                <input type = "hidden" name = "item_id_ID" value = "ID">
+                <label for = "item_name_ID">Name</label>
+                <input type = "text" name = "item_name_ID">
+              </td>
+
+              <td>
+               
+                <label for = "item_stock_number_ID">Stock Number</label>
+                <input type = "text" name = "item_stock_number_ID" maxlength = "8">
+              </td>
+
+              <td>
+                
+                <label for = "item_quantity_ID">Quantity</label>
+                <input type = "text" name = "item_quantity_ID">
+              </td>
+
+              <td>
+                <a href = "#" class = "delete">Delete</a>
+              </td>
+            </tr>
+          </script>
+
+          <button type = "button" id = "add_item" value = "Add Item">Add Item</button>
+
+          <div class = "actions">
+            <input type = "submit" value = "Order Inventory">
+          </div>
+        </fieldset>
+      </form>
+    </main>
+
+  </body>
+</html>
+
+
+

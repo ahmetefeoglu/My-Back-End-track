@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Utility Library Tests</title>
+   
+    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+
+       $(function() {
+        var $output = "Your favourite fruit is";
+         var $p = $("p");
+
+         $("a").on("click", function(e) {
+           e.preventDefault();
+           var $e = $(this);
+           $p.text($output + $e.text());
+
+         });
+
+
+         $("form").on("submit", function(e) {
+          e.preventDefault();
+          var $input = $(this).find("input[type = 'text']");
+          $p.text(  $output + $input.val());
+
+         });
+
+
+       });
+    </script>
+    
+
+  </head>
+
+  <body>
+    <ul>
+      <li><a href = "#">Apples</a></li>
+      <li><a href = "#">Bananas</a></li>
+      <li><a href = "#">Oranges</a></li>
+    </ul>
+
+
+    <form action = "" method = "post">
+      <fieldset>
+        <input type = "text" />
+        <input type = "submit" value = "Choose">
+      </fieldset>
+    </form>
+
+    <p>Choose your favourite fruit</p>
+  </body>
+
+</html>

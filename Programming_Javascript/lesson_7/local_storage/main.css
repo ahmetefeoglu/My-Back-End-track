@@ -1,0 +1,40 @@
+@import url("white-space.css");
+
+body {
+  background: red;
+}
+
+main {
+  width:800px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px 20px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+
+nav ul li a {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #C4C044;
+  text-decoration: none;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  color: 000000;
+}
+
+nav ul li a.active {
+  background: #47E0CA;
+}
+
+article {
+  display: none;
+}

@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Duncan's Just-In-Time Donuts</title>
+
+    <link rel="stylesheet" type="text/css" href="donuts.css" />
+
+    <script type="text/javascript">
+      function average(num_arr) {
+        
+        return  sum(num_arr) / num_arr.length;
+
+      }
+
+
+      function sum(num_arr) {
+        var total = 0;
+        for(var i = 0, len = num_arr.length;i < len; i++) {
+          total += num_arr[i];
+
+        }
+        return total;
+      }
+      var temperatures = [37.5,22,33,18,24];
+      console.log(average(temperatures));
+
+    </script>
+  </head>
+</html>

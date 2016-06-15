@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Utility Library Tests</title>
+    <link rel = "stylesheet"  type = "text/css" href = "ex_dom.css">
+    <script type = "text/javascript">
+
+      function init() {
+        var planet = document.getElementById("redplanet");
+        planet.innerHTML="Red Alert: hit by  fire!!!!!";
+        planet.setAttribute("class", "redtext");
+
+
+      }
+
+      window.onload = init;
+      console.log(window.onload);
+       
+       
+
+
+    </script>
+  </head>
+
+  <body>
+    <h1>Green Planet</h1>
+    <p id="greenplanet">All is well</p>
+
+    <h1> Red Planet</h1>
+    <p id= "redplanet"> Nothing to report</p>
+
+    <h1>Blue Planet</h1>
+    <p id ="blueplanet">All systems A-OK</p>
+  </body>
+</html>

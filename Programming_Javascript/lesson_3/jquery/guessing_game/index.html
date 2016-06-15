@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Guess a Number</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="stylesheets/game.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      $(function() {
+        var answer = Math.floor((Math.random()*100) + 1);
+        var guess = 0;
+        console.log(answer);
+
+        $("form").on("submit", function(eventObj) {
+          eventObj.preventDefault();
+          var message = "";
+
+          guess = +$("#guess").val();
+          
+
+          if (guess === answer) {
+            message = "You have won!!!";
+            console.log("yeah");
+
+          }
+
+          else if (guess > answer) {
+            message = "You have quessed " + guess + " guess lower";
+            console.log("nope");
+
+          }
+
+          else if (guess > answer) {
+            message = "You have guessed " + guess + "guess higher";
+            console.log("fck");
+          }
+
+          $("p").text(message);
+
+        });
+
+        $("a").on("click",function(e) {
+          e.preventDefault();
+          answer = Math.floor((Math.random()* 100) + 1);
+          $("p").text("Guess from  1 to 100!!!");
+
+        });
+
+      });
+
+
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <h1>Number Guessing Game</h1>
+      <p>Guess a number from 1 to 100</p>
+      <form action="" method="get">
+        <fieldset>
+          <input type="text" id="guess" maxlength="3" />
+          <input type="submit" value="Guess" />
+        </fieldset>
+      </form>
+      <a href="#">New game</a>
+    </main>
+  </body>
+</html>

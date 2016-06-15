@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang = "en-Us">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" /> 
+    
+
+    <script type = "text/javascript">
+
+    /*
+      var paraghraph = "In the midway of this our mortal life\
+                        I found me in a gloomy wood, astray\
+                        Gone from the path direct: and e'en to tell\
+                        It were no easy task, how savage wild\
+                        That forest, how robust and rough its growth,\
+                        Which to remember only, my dismay\
+                        Renews, in bitterness not far from death.\
+                        Yet to discourse of what there good befell,\
+                        All else will I relate discover'd there.\
+                        How first I enter'd it I scarce can say,\
+                        Such sleepy dullness in that instant weigh'd\
+                        My senses down, when the true path I left,\
+                        But when a mountain's foot I reach'd, where clos'd\
+                        The valley, that had pierc'd my heart with dread,\
+                        I look'd aloft, and saw his shoulders broad\
+                        Already vested with that planet's beam,\
+                        Who leads all wanderers safe through every way.";
+                        */
+
+      var paragraph = "In the midway of this our mortal life, " + 
+                        "I found me in a gloomy wood, astray " +
+                        "Gone from the path direct: and e'en to tell " +
+                        "It were no easy task, how savage wild " + 
+                        "That forest, how robust and rough its growth, " +
+                        "Which to remember only, my dismay " + 
+                        "Renews, in bitterness not far from death. " +
+                        "Yet to discourse of what there good befell, " +
+                        "All else will I relate discover'd there. " +
+                        "How first I enter'd it I scarce can say, " +
+                        "Such sleepy dullness in that instant weigh'd " +
+                        "My senses down, when the true path I left, " +
+                        "But when a mountain's foot I reach'd, where clos'd " +
+                        "The valley, that had pierc'd my heart with dread, " +
+                        "I look'd aloft, and saw his shoulders broad " +
+                        "Already vested with that planet's beam, " +
+                        "Who leads all wanderers safe through every way. ";
+                        
+
+      var pure_paragraph = paragraph.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+
+      var arr_words = pure_paragraph.split(" ");
+      /*
+
+       words {
+        word1: 34;
+        word2: 17;
+        ....
+  
+       }
+       */
+
+
+
+      var words = {};
+      var most_used_word;
+
+      function compare(value,index) {
+        if (words["" + value] >= 1) {
+          words["" + value] += 1;
+        }
+
+        else {
+          words["" + value] = 1;
+        }   
+      }
+
+
+      function wordCount(obj) {
+        var total = 0;
+        for (var prop in obj) {
+          if (obj.hasOwnProperty(prop)) {
+            total += obj[prop];
+          }
+        }
+        return total;
+      }
+
+
+      function frequentWord(obj) {
+        for (var prop in obj) {
+          if(!most_used_word) {most_used_word = prop};
+
+          if (obj[most_used_word] < obj[prop]) {most_used_word = prop};
+
+
+        }
+
+        return most_used_word;
+
+      }
+
+
+
+      arr_words.forEach(compare);
+      
+
+      console.log(frequentWord(words));
+
+      console
+
+
+      
+
+
+                        
+
+              
+
+
+      
+
+    </script>
+  </head>
+</html>

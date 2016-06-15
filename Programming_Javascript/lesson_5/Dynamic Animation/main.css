@@ -1,0 +1,103 @@
+@import url("white-space.css");
+
+
+body {
+  background: #7E061C;
+  font:16px normal, Helvetica;
+}
+
+main {
+  width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+main div.background {
+  width: 100%;
+  height:600px;
+  background: linear-gradient(to bottom, #ffffff 0%, #0066cc 100%);
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 0;
+
+}
+
+main > p {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 18px 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-left: 40px;
+}
+
+
+dl dt {
+  margin: 15px 0 5px 0;
+}
+
+input[type= "number"] {
+  width: 50px;
+  padding: 5px 0 5px 5px;
+}
+
+
+input[type = "submit"] {
+  margin-top:20px;
+  padding: 2px 5px;
+
+}
+
+
+
+
+/* INDIVIDUAL SHAPES */
+
+
+
+div.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #F5D30A;
+  z-index: 1;
+  position: absolute;
+}
+
+
+
+div.square {
+  width: 40px;
+  height: 40px;
+  background: #F5D30A;
+  z-index: 1;
+  position: absolute;
+}
+
+
+div.star {
+  width: 60px;
+  height: 60px;
+  background: transparent url("star.png") 0 0 no-repeat;
+  content: "";
+  z-index: 1;
+  position: absolute;
+}
+
+
+
+
+
+

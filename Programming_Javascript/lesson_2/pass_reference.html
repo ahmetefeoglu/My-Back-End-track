@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang = "en-Us">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" /> 
+    <link rel="stylesheet" type="text/css" href="splash.css">  
+
+    <script>
+      var groceries = {
+        apples: .99,
+        oranges: 1.35,
+        bananas: 2.25
+      };
+
+
+      function getTotal(items) {
+        total = 0;
+
+        for (var item in items ) {
+          total += items[item];
+
+        }
+
+        items.total = total;
+
+
+      }
+
+      getTotal(groceries);
+      console.log(groceries.total);
+
+    </script>
+  </head>

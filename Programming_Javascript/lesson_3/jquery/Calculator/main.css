@@ -1,0 +1,26 @@
+
+
+
+body {
+  background: #8E1717;
+}
+
+main {
+  padding: 20px;
+  max-width: 450px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: #ffffff;
+  margin-top: 50px;
+}
+
+
+input[type  = "text"] {
+  width: 100px;
+}
+
+
+h1 {
+  color: green;
+  font-size: 40px;
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang = "en-Us">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" /> 
+    <link rel="stylesheet" type="text/css" href="main.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+    <script>
+      var object = {
+        foo: function() {
+          return "this here is: " + this;
+        }
+      };
+
+      console.log(object.foo());              // "this here is: [object Object]"
+
+      bar = object.foo;
+      console.log(bar());                // "this here is: [object Window]"
+
+    </script>
+  </body>
+</html>

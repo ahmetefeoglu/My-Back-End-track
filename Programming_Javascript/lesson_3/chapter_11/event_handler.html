@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Utility Library Tests</title>
+    <link rel = "stylesheet"  type = "text/css" href = "event_handler.css">
+    <script type = "text/javascript">
+      window.onload = function() {
+        var count = 0;
+        
+        var message = "You clicked me ";
+        var div = document.getElementById("message");
+        var button = document.getElementById("clickme");
+        button.onclick = function() {
+          count++;
+          div.innerHTML = message + count + " times";
+        };
+
+
+      };
+
+
+    </script>
+  </head>
+
+  <body>
+    <button id = "clickme">Click me!</button>
+    <div id = "message">a</div>
+  </body>
+</html>

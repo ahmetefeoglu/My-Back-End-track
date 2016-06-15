@@ -1,0 +1,75 @@
+@import url("white-space.css");
+
+
+
+body {
+  background:#eee196;
+}
+
+
+main {
+  background: #ffffff;
+  width: 1000px;
+  box-sizing: border-box;
+  margin:0 auto;
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+/* FORM  ELEMENTS */
+
+
+input[type = "text"] {
+  width:80%;
+  box-sizing:border-box;
+  padding: 12px 12px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+input[type = "submit"] {
+  width: 18%;
+  padding: 10px 10px;
+  font-size: 16px;
+}
+
+
+/* SIDEBARR */
+
+
+div.sidebar {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+
+
+div.content {
+  display: inline-block;
+  margin-left: 100px;
+  width:75%;
+}
+
+
+div.content h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+
+}
+
+div.content ul li {
+  padding: 10px 0 10px 20px;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+
+}
+
+
+div.content ul li:hover {
+  content: "";
+  background: #22CB58;
+}

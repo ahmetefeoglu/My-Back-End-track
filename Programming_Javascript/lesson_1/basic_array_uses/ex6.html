@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Duncan's Just-In-Time Donuts</title>
+
+    <link rel="stylesheet" type="text/css" href="donuts.css" />
+
+    <script type="text/javascript">
+      function outer() {
+        function hello() {
+        return "hello world!";
+        }
+
+        return hello();
+      }
+
+      console.log(hello());
+
+
+    </script>
+  </head>
+</html>
+
+
+console.log(hello());
+
+var hello = function() {
+  return 'hello world';
+}

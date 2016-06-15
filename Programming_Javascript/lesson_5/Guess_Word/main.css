@@ -1,0 +1,77 @@
+
+
+
+body {
+  font: 16px normal Helvetica;
+  background: red;
+}
+
+main {
+  width: 800px;
+  margin: 0 auto;
+  background:#ffffff;
+  content: "";
+  padding: 0 20px;
+
+}
+
+
+#tree {
+  width: 700px;
+  height: 600px;
+  background: transparent url("treee.png") 0 0 no-repeat;
+  margin: 0 auto;
+  content: "";
+  position: relative;
+
+}
+
+#apples {
+  position: absolute;
+  z-index: 1;
+ 
+  width: 375px;
+  height: 325px;
+  left:170px;
+  top:20px;
+}
+
+.guess_0 {
+  background: transparent url("apples.png") 0 0  no-repeat;
+}
+
+.guess_1 {
+  background: transparent url("apples.png") 0 -325px  no-repeat;
+}
+
+.guess_2 {
+  background: transparent url("apples.png") 0 -650px  no-repeat;
+}
+
+.guess_3 {
+  background: transparent url("apples.png") 0 -975px  no-repeat;
+}
+
+.guess_4 {
+  background: transparent url("apples.png") 0 -1300px  no-repeat;
+}
+
+.guess_5 {
+  background: transparent url("apples.png") 0 -1625px  no-repeat;
+}
+
+.guess_6 {
+  background-size: 0 0;
+}
+
+ span {
+  display: inline-block;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(51,51,51);
+  border-bottom-width: 2.28px;
+  height:35px;
+  width: 30px;
+  margin-right: 10px;
+  font-size: 28px;
+  text-transform: uppercase;
+}
